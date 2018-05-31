@@ -1,0 +1,327 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+    color: $text-color;
+
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+    &:hover {
+        color: $text-color;
+    }
+}
+
+p {
+    @include media-query($on-palm) {
+        text-align: justify;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    overflow-x: hidden;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 100%;
+    @include media-query($on-palm) {
+        background-position: center;
+    }
+}
+
+
+
+
+.call-container {
+    padding: 10px 0 !important;
+}
+
+.call {
+    background-color: $brand-color;
+    color: #fff;
+    padding: 5px 1em !important;
+    .fa {
+    font-size: 1.15em;
+    }
+    a {
+        color: #fff;
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    @include media-query($on-palm) {
+        text-align: center;
+    }
+    
+}
+
+.vert-center {
+    align-self: center;
+}
+
+.no-gap {
+    grid-gap: 0 !important;
+}
+
+.no-pad {
+    padding: 0 !important;
+}
+.no-mar {
+    margin: 0;
+}
+
+/* .owl-item {
+    display: none;
+}
+
+.owl-item .active {
+    display: block;
+} */
+.owl-carousel .owl-item {
+    height: 500px;
+    width:100%;
+    @include media-query($on-palm) {
+        height: 250px
+    }
+}
+
+.item {
+    border: 1px solid #eee;
+    .image {
+        height: 500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+         @include media-query($on-palm) {
+            height: 250px
+    }
+        
+    }
+}
+
+ .owl-carousel div .textoverlay{
+    position:absolute;
+    color:#FFF;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px 10px;
+    bottom: 10%;
+    left: 10%;
+    display:block;
+     h1 {
+         margin: 0;
+     }
+}
+.text-center {
+    text-align: center;
+}
+
+.product-image {
+    .c-4 {
+        position: relative;
+        border: 1px solid #eee;
+        
+    }
+    .hover-text {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 8px 10px;
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 90px;
+        display: none;
+        
+        a {
+            color: #fff;
+        }
+        h3 {
+            margin: 0;
+        }
+        @include media-query($on-palm) {
+            bottom: 5%;
+            display: block;
+        }
+        
+    }
+    .product-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 200px;
+        
+    }
+    
+    
+    .c-4:hover .hover-text {
+        transition-duration: 2s;
+        display: block;
+    }
+    
+    p {
+        text-align: center;
+    }
+ 
+}
+.about-us {
+    p {
+        text-align: center;
+        @include media-query($on-palm) {
+            text-align: justify;
+        }
+    }
+}
+
+footer {
+    background-color: darken($brand-color, 50%);
+    border-color: darken($brand-color, 50%);
+    color: #aaa;
+    margin-top: 1em;
+    .footer-about {
+        margin: 0;
+        @include media-query($on-palm) {
+            text-align: center;
+        }
+    }
+}
+
+// Product Image Styles
+.pro-image {
+    img {
+        border: 1px solid #eee;
+    }
+}
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    background-color: $brand-color;
+    color: #fff;
+    &:hover {
+        background-color: darken($brand-color, 10%);
+        color: #fff;
+    }
+}
+
+.btn-success-gradiant {
+  background: $brand-color;
+  background: -webkit-linear-gradient(legacy-direction(to right), $brand-color 0%, lighten($brand-color, 8%) 100%);
+  background: -webkit-gradient(linear, left top, right top, from($brand-color), to(lighten($brand-color, 8%)));
+  background: -webkit-linear-gradient(left, $brand-color 0%, lighten($brand-color, 8%) 100%);
+  background: -o-linear-gradient(left, $brand-color 0%, lighten($brand-color, 8%) 100%);
+  background: linear-gradient(to right, $brand-color 0%, lighten($brand-color, 8%) 100%);
+  border: 0px; }
+  .btn-success-gradiant:hover {
+    background: lighten($brand-color, 8%);
+    background: -webkit-linear-gradient(legacy-direction(to right), lighten($brand-color, 8%) 0%, $brand-color 100%);
+    background: -webkit-gradient(linear, left top, right top, from(lighten($brand-color, 8%)), to($brand-color));
+    background: -webkit-linear-gradient(left, lighten($brand-color, 8%) 0%, $brand-color 100%);
+    background: -o-linear-gradient(left, lighten($brand-color, 8%) 0%, $brand-color 100%);
+    background: linear-gradient(to right, lighten($brand-color, 8%) 0%, $brand-color 100%); }
+  .btn-success-gradiant.active, .btn-success-gradiant:active, .btn-success-gradiant:focus {
+    -webkit-box-shadow: 0px;
+    box-shadow: 0px;
+    opacity: 1; }
+
+
+
+.products-page {
+    margin: 2em 0;
+}
+
+//contact form styles
+.form {
+
+    .input {
+        border: 1px solid #eee;
+        border-radius: 2px;
+        margin-bottom: 0.5em;
+        padding: 8px 10px;
+    }
+    
+    input[type='text'], input[type='tel']{
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        width: 100%;
+        
+ 
+    }
+    input[type='submit'] {
+         margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        width: 100%;
+        padding: 15px 0;
+        cursor: pointer;
+    }
+     
+}
+
+.call-us {
+    @include media-query($on-palm) {
+    a {
+        display: block;
+        text-align: center;
+    }
+}
+}
+
+
+.active {
+    color: $text-color;
+}
+
+.submit {
+    button {
+        width: 100%;
+        font-family: inherit;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+}
+
+.vert-end {
+    align-self: end;
+}
+
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: $brand-color !important;
+}
+
+.map {
+
+    height: 450px;
+    width: 100%;
+    border: 4px solid #eee;
+    @include media-query($on-palm) {
+        height: 250px;
+    }
+}

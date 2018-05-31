@@ -1,0 +1,99 @@
+menu-items:
+    - item: Solar Electricity
+      link: /solar-electricity/
+      
+    - item: Solar Water Heating
+      link: /solar-water-heating/
+      
+    - item: Solar Pumpsets
+      link: /solar-pumpsets/
+      
+    - item: Water Purification Systems
+      link: /water-purification-systems/     
+      
+    - item: Contact Us
+      link: /contact/
+
+
+phone: '09900442619'
+email: 'sunenergysun2010@gmail.com'
+address: 'Near McDonalds, ITC Factory, Toll Plaza, Sadahalli Gate, <br>Bangalore International Airport Road, <br>Bengaluru, Karnataka 562157'
+
+slider:
+    - image: /images/slider/Solar_heaters.jpg
+      text: Solar Heaters
+      
+    - image: /images/slider/water-softener-system.jpg
+      text: Water Softner System
+      
+    - image: /images/slider/solar-panes.jpg
+      text: Solar Street Lighting
+      
+    - image: /images/slider/Spare_PV_modules.jpg
+      text: Solar PV Modules
+      
+    - image: /images/slider/SOLAR-SUBMERSIBLE-PUMP.jpg
+      text: Solar Submersible Pump
+      
+    - image: /images/slider/solar-lamp.jpg
+      text: Solar Lamp
+      
+    - image: /images/slider/RO_water_filters.jpg
+      text: RO Water Filter
+
+    - image: /images/slider/RO_plant.jpg
+      text: RO Water Plant
+
+
+about-us: 
+    title: About Us
+    text: '<p>Sun Energy Systems is one of the leading provider of solar energy solutions from 2011.</p><p>Having successfully installed over 1000 units, we provide affordable and low maintenance systems with a 5 year full service warranty on our devices. Our strength lies in understanding your requirements and customizing every detail of the product.</p><p>We have a dedicated team of trained technicians who undertake the complete installation and maintenance of the products.</p>' 
+
+     
+products-title: Products
+#product-description: '<p>At Sun Energy Systems we offer a wide range of products catering to both Domestic and Industrial needs.</p><p>Our systems are carefully installed by trained technicians and I personally supervise and see through every detail. I believe each customer is entitled to 100 % satisfaction and commitment.</p>'
+products:
+    - image: /images/products/Solar-Home-ups.jpg
+      text: Solar Home UPS
+      link: '/solar-electricity/'
+      
+    - image: /images/products/RO_water_filters.jpg
+      text: RO Water Filters
+      link: '/water-purification-systems/'
+       
+    - image: /images/products/solar-lamp.jpg
+      text: Solar Lamps
+      link: '/solar-electricity/'
+       
+    - image: /images/products/solar-panes.jpg
+      text: Solar Street Lighting
+      link: '/solar-electricity/'
+       
+    - image: /images/products/solar-submersible-water-pump.jpg
+      text: Solar Submersible Pump
+      link: '/solar-pumpsets/'
+      
+    - image: /images/products/Spare-PV-modules.jpg
+      text: Spare PV Mdules
+      link: '/solar-electricity/'
+      
+    - image: /images/products/RO_plant.jpg
+      text: RO Water Plants
+      link: '/water-purification-systems/'
+      
+    - image: /images/products/water-softener-system.jpg
+      text: Water Softners
+      link: '/water-purification-systems/'
+      
+    - image: /images/products/Solar_heaters.jpg
+      text: Solar Water Heaters
+      link: 'solar-water-heating/'
+       
+       
+footer:
+    text: Sun Energy Systems is one of the leading provider of solar energy solutions from 2011.
+      
+      
+contact-page:
+    title: Contact Us
+    text: We aim to delight our customers. For any concerns or questions please contact us at the below details. You are our number one priority and we will do our best to quickly resolve any problem.

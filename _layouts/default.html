@@ -1,0 +1,86 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+<!--   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">   -->
+</head>
+<body>
+
+<div class="container">
+<header>
+    <div class="r">
+        <div class="c-3">
+            <a href="{{site.baseurl}}/"><div class="logo" style="background-image: url({{site.baseurl}}{{site.logo}})"></div></a>
+        </div>
+        <div class="c-9 vert-center">
+            <ul class="menu">
+               {% for item in site.data.data.menu-items %}
+                    <li><a href="{{site.baseurl}}{{item.link}}" {% if page.url == item.link %} class="active" {% endif %}>{{item.item}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+    
+    <div class="r no-gap">
+        <div class="c-12 no-pad call-container">
+            <p class="no-mar call" ><span data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><small>Call us now &nbsp;<a href="tel:{{site.data.data.phone}}"><i class="fa fa-phone-square"></i> {{site.data.data.phone}}</a></small></span></p>
+        </div>
+    </div>
+</header>
+
+{{content}}
+
+<footer>
+    <div class="r">
+        <div class="c-4">
+            <div class="r">
+                <div class="c-12"><div class="logo" style="background-image: url({{site.baseurl}}{{site.logo}})"></div></div>
+                <div class="c-12"><p class="footer-about"><small>{{site.data.data.footer.text}}</small></p></div>
+            </div>
+        </div>
+        <div class="c-4 vert-end">
+            <p class="text-center"><small>Sun Energy Systems © 2018 All rights reserved <br><a href="tel:{{site.data.data.phone}}">{{site.data.data.phone}}</a></small></p>
+        </div>
+        <div class="c-4"></div>
+    </div>
+</footer>  
+  
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{site.baseurl}}/js/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    autoplay: true,
+    loop:true,
+    margin:10,
+    singleItem:true,
+    autoHeight:true,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    items: 1,
+    dots: true
+})
+</script>
+<script src="{{site.baseurl}}/js/aos.js"></script>
+ <script>
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+        easing: 'ease-in-sine',
+        delay: 100,
+        disable: 'mobile'
+    });
+  </script>
+
+</body>
+</html>

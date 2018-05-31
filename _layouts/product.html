@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article class="products-page">
+    <div class="r">
+       {% for item in page.products %}
+           <div class="c-1"></div>
+            <div class="c-4">
+               
+                <div class="pro-image" data-aos="flip-left">
+                    <img src="{{site.baseurl}}{{item.image}}" alt="{{item.title}}" width="100%" height="auto">
+                </div>
+            </div>
+            <div class="c-6">
+                <div class="pro-description" data-aos="fade-up">
+                   <h2 class="no-mar">{{item.title}}</h2>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+            <div class="c-1"></div>
+        {% endfor %}
+        
+        <div class="c-1"></div>
+        <div class="c-4">
+            <div class="contact-form" data-aos="fade-up">
+               <h2 class="">Contact Us for Price Details</h2>
+                {% include form.html %}
+            </div>
+        </div>
+        <div class="c-2 vert-center">
+           <!--  <div class="call-us">
+                <a href="tel:{{site.data.data.phone}}" class="btn"><i class="fa fa-phone"></i><span> Call Us</span></a>
+            </div> -->
+        </div>
+        <div class="c-4"></div>
+        <div class="c-1"></div>
+    </div>
+</article>
+
+{{content}}

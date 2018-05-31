@@ -1,0 +1,45 @@
+---
+title: Welcome
+layout: default
+---
+
+
+<div class="slider">
+    <div class="r">
+        <div class="c-12">
+            <div class="owl-carousel owl-theme">
+               {% for item in site.data.data.slider %}
+                <div class="item">
+                    <div class="textoverlay"><h1>{{item.text}}</h1></div>
+                    <div class="image" style="background-image: url({{site.baseurl}}{{item.image}})"></div>
+                </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+    </div>
+</div>
+  
+<div class="about-us">
+    <div class="r" data-aos="fade-up">
+        <div class="c-12 text-center no-mar no-pad"><h2>{{site.data.data.about-us.title}}</h2></div>
+        <div class="c-2 no-mar no-pad"></div>
+        <div class="c-8">{{site.data.data.about-us.text}}</div>
+        <div class="c-2 no-mar no-pad"></div>
+    </div>
+</div>
+
+<div class="product-image">
+   <div class="r" data-aos="fade-up">
+        <div class="c-12 text-center no-mar no-pad"><h2>{{site.data.data.products-title}}</h2></div>
+       <!--  <div class="c-2"></div>
+        <div class="c-8">{{site.data.data.product-description}}</div>
+        <div class="c-2"></div> -->
+        {% for item in site.data.data.products %}
+        <div class="c-4" data-aos="flip-left">
+            <div class="hover-text"><a href="{{site.baseurl}}{{item.link}}"><h3>{{item.text}}</h3></a></div>
+            <a href="{{site.baseurl}}{{item.link}}"><div class="product-item" style="background-image: url({{site.baseurl}}{{item.image}})"></div></a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
