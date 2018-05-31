@@ -318,10 +318,14 @@ footer {
 
 .map {
 
-    height: 450px;
+    height: 485px;
     width: 100%;
     border: 4px solid #eee;
     @include media-query($on-palm) {
         height: 250px;
     }
+}
+
+button {
+    outline: none;
 }
