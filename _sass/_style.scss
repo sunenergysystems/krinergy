@@ -192,6 +192,8 @@ p {
  
 }
 .about-us {
+    background-color: #eee;
+
     p {
         text-align: center;
         @include media-query($on-palm) {
