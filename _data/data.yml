@@ -55,6 +55,18 @@ about-us:
 products-title: Products
 #product-description: '<p>At Sun Energy Systems we offer a wide range of products catering to both Domestic and Industrial needs.</p><p>Our systems are carefully installed by trained technicians and I personally supervise and see through every detail. I believe each customer is entitled to 100 % satisfaction and commitment.</p>'
 products:
+
+    - image: /images/products/solar-panes.jpg
+      text: Solar Street Lighting
+      link: '/solar-electricity/'
+       
+    - image: /images/products/solar-submersible-water-pump.jpg
+      text: Solar Submersible Pump
+      link: '/solar-pumpsets/'
+      
+    - image: /images/products/Spare-PV-modules.jpg
+      text: Spare PV Mdules
+      link: '/solar-electricity/'
     - image: /images/products/Solar-Home-ups.jpg
       text: Solar Home UPS
       link: '/solar-electricity/'
@@ -67,17 +79,6 @@ products:
       text: Solar Lamps
       link: '/solar-electricity/'
        
-    - image: /images/products/solar-panes.jpg
-      text: Solar Street Lighting
-      link: '/solar-electricity/'
-       
-    - image: /images/products/solar-submersible-water-pump.jpg
-      text: Solar Submersible Pump
-      link: '/solar-pumpsets/'
-      
-    - image: /images/products/Spare-PV-modules.jpg
-      text: Spare PV Mdules
-      link: '/solar-electricity/'
       
     - image: /images/products/RO_plant.jpg
       text: RO Water Plants
