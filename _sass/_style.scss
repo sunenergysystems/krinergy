@@ -51,9 +51,16 @@ p {
     background-size: contain;
     height: 50px;
     width: 100%;
+
     @include media-query($on-palm) {
         background-position: center;
     }
+}
+
+.footer-logo {
+    -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        opacity: 0.9;
 }
 
 
@@ -216,6 +223,12 @@ footer {
         margin: 0;
         @include media-query($on-palm) {
             text-align: center;
+        }
+    }
+    a {
+        color: #fff;
+        &:hover {
+            color: #ddd;
         }
     }
 }
