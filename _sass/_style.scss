@@ -194,6 +194,11 @@ p {
 .about-us {
     background-color: #eee;
 
+    h2 {
+        @include media-query($on-palm) {
+            margin-bottom: 0;
+        }
+    }
     p {
         text-align: center;
         @include media-query($on-palm) {
@@ -236,19 +241,19 @@ footer {
 
 .btn-success-gradiant {
   background: $brand-color;
-  background: -webkit-linear-gradient(legacy-direction(to right), $brand-color 0%, lighten($brand-color, 8%) 100%);
-  background: -webkit-gradient(linear, left top, right top, from($brand-color), to(lighten($brand-color, 8%)));
+  background: -webkit-linear-gradient(legacy-direction(to right), darken($brand-color, 10%) 0%, lighten($brand-color, 8%) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(darken($brand-color, 10%)), to(lighten($brand-color, 8%)));
   background: -webkit-linear-gradient(left, $brand-color 0%, lighten($brand-color, 8%) 100%);
-  background: -o-linear-gradient(left, $brand-color 0%, lighten($brand-color, 8%) 100%);
-  background: linear-gradient(to right, $brand-color 0%, lighten($brand-color, 8%) 100%);
+  background: -o-linear-gradient(left, darken($brand-color, 10%) 0%, lighten($brand-color, 8%) 100%);
+  background: linear-gradient(to right, darken($brand-color, 10%) 0%, lighten($brand-color, 8%) 100%);
   border: 0px; }
   .btn-success-gradiant:hover {
     background: lighten($brand-color, 8%);
-    background: -webkit-linear-gradient(legacy-direction(to right), lighten($brand-color, 8%) 0%, $brand-color 100%);
-    background: -webkit-gradient(linear, left top, right top, from(lighten($brand-color, 8%)), to($brand-color));
-    background: -webkit-linear-gradient(left, lighten($brand-color, 8%) 0%, $brand-color 100%);
-    background: -o-linear-gradient(left, lighten($brand-color, 8%) 0%, $brand-color 100%);
-    background: linear-gradient(to right, lighten($brand-color, 8%) 0%, $brand-color 100%); }
+    background: -webkit-linear-gradient(legacy-direction(to right), lighten($brand-color, 8%) 0%, darken($brand-color, 10%) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(lighten($brand-color, 8%)), to(darken($brand-color, 10%)));
+    background: -webkit-linear-gradient(left, lighten($brand-color, 8%) 0%, darken($brand-color, 10%) 100%);
+    background: -o-linear-gradient(left, lighten($brand-color, 8%) 0%, darken($brand-color, 10%) 100%);
+    background: linear-gradient(to right, lighten($brand-color, 8%) 0%, darken($brand-color, 10%) 100%); }
   .btn-success-gradiant.active, .btn-success-gradiant:active, .btn-success-gradiant:focus {
     -webkit-box-shadow: 0px;
     box-shadow: 0px;
