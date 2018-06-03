@@ -1,4 +1,5 @@
 ---
+layout: compress
 ---
 <!DOCTYPE html>
 <html>
@@ -11,6 +12,10 @@
 </head>
 
 <body>
+
+<div id="preloader">
+  <div id="status" style="background-image: url({{site.baseurl}}/images/sun.gif)">&nbsp;</div>
+</div>
 
 <div class="container">
 <header>
@@ -46,14 +51,22 @@
             </div>
         </div>
         <div class="c-4 vert-end">
-            <p class="text-center"><small>Sun Energy Systems © 2018 All rights reserved <br><a href="tel:{{site.data.data.phone}}">{{site.data.data.phone}}</a></small></p>
+            <p class="text-center"><small>{{site.data.data.footer.copyright}}<br><a href="tel:{{site.data.data.phone}}">{{site.data.data.phone}}</a></small></p>
         </div>
-        <div class="c-4"></div>
+        <div class="c-4 vert-end">
+            <p class="text-center"><small>Developed by <a target="_blank" href="http://webjeda.com" class="text-white">webjeda</a></small></p>
+        </div>
     </div>
 </footer>  
   
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+jQuery(window).on('load',function() {
+    jQuery("#status").fadeOut();  
+    jQuery("#preloader").delay(1000).fadeOut("slow");
+})    
+</script>
 <script src="{{site.baseurl}}/js/owl.carousel.min.js"></script>
 <script src="{{site.baseurl}}/js/aos.js"></script>
 <script>
