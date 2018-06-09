@@ -5,6 +5,7 @@ logo: /images/sun-energy-logo-small.png
 
 #baseurl: /krinergy
 
+
 collections:
         products:
             output: true
